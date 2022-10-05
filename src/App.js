@@ -66,7 +66,7 @@ export default function App() {
       </div>
       <footer className="developer">
         <a
-          href="https://github.com/Anastasiia-Tymoshenko/shecodes-plus-project"
+          href="https://github.com/Anastasiia-Tymoshenko/weather-react-app"
           className="link-info"
           target="_blank"
           rel="noreferrer"
