@@ -1,0 +1,46 @@
+ul {
+  list-style: none;
+  font-size: 22px;
+}
+
+li h1 {
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.weather-section ul {
+  font-weight: 200;
+  padding: 0;
+  margin-left: 30px;
+}
+
+.weather-section h1 {
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.weather-section h2 {
+  display: inline;
+  font-size: 120px;
+  font-weight: 600;
+  padding-left: 30px;
+}
+
+span {
+  font-size: 40px;
+  font-weight: 500;
+  color: rgb(3, 35, 110);
+}
+
+img {
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+#condition::first-letter {
+  text-transform: capitalize;
+}
