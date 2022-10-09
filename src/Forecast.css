@@ -1,17 +1,19 @@
 .Forecast h4,
 .Forecast span {
-  text-align: center;
   font-size: 18px;
   font-weight: 300;
   line-height: 0.6;
   opacity: 0.8;
+  text-align: center;
 }
 
 .Forecast img {
   width: 40px;
+  display: block;
+  margin: 0 auto;
 }
 
-.Forecast p {
-  margin-top: 15px;
-  text-align: center;
+.Forecast span {
+  display: block;
+  margin-top: 10px;
 }

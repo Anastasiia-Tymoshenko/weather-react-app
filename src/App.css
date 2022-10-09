@@ -1,63 +1,54 @@
 .App {
   font-family: 'Kanit', sans-serif;
   color: #03236e;
-  width: 800px;
-  margin: 0 auto;
+  max-width: 800px;
+  margin: 30px auto;
 }
 
-ul {
-  list-style: none;
-  font-size: 22px;
-  padding: 0;
-}
-
-li h1 {
-  font-weight: 200;
-  font-size: 22px;
-  line-height: 1.5;
-  text-align: center;
-}
-
-.wrapper {
+.App .wrapper {
   border: solid 1px #0dcaf0;
   border-radius: 10px;
   margin-top: 10px;
   padding: 10px;
 }
 
-form {
+.App ul {
+  list-style: none;
+  font-size: 22px;
+  padding: 0;
+}
+
+.App h1 {
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.App form {
   margin: 10px auto;
   text-align: right;
 }
 
-h3 {
+.App h3 {
   text-align: center;
   margin: 30px auto;
 }
 
-.more-details-link {
+.App p {
   text-align: right;
-  margin-bottom: 0;
+  margin: 20px 0 0 0;
 }
 
-.link-info {
+.App a {
   text-decoration: none;
   font-size: 16px;
   font-weight: 300;
   color: #0dcaf0;
 }
 
-.link-info::after {
-  content: ' ';
-}
-
-.developer {
+.App footer {
   font-weight: 300;
   margin-left: 10px;
   font-size: 16px;
-}
-
-#current-date {
-  margin-top: 5px;
-  padding: 0;
 }

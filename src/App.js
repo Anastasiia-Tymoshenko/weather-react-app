@@ -53,10 +53,9 @@ export default function App() {
               <Forecast />
             </section>
 
-            <p className="more-details-link">
+            <p>
               <a
                 href="https://www.accuweather.com/"
-                className="link-info"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -65,14 +64,13 @@ export default function App() {
             </p>
           </main>
         </div>
-        <footer className="developer">
+        <footer>
           <a
             href="https://github.com/Anastasiia-Tymoshenko/weather-react-app"
-            className="link-info"
             target="_blank"
             rel="noreferrer"
           >
-            Open-source code
+            Open-source code{' '}
           </a>
           by Anastasiia Tymoshenko
         </footer>
