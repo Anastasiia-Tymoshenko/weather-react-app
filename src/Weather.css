@@ -1,25 +1,16 @@
 .Weather ul {
   list-style: none;
   font-size: 22px;
-}
-
-.Weather h1 {
-  font-weight: 200;
-  font-size: 22px;
-  line-height: 1.5;
-  text-align: center;
-}
-
-.Weather ul {
   font-weight: 200;
   padding: 0;
   margin-left: 30px;
 }
 
-.Weather h1 {
+.Weather li h1 {
   font-size: 56px;
   font-weight: 600;
   line-height: 1.5;
+  text-align: center;
 }
 
 .Weather h2 {
