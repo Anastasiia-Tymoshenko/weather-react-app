@@ -45,7 +45,7 @@ export default function App() {
 
           <main>
             <section>
-              <Weather />
+              <Weather defaultCity="Dublin" />
             </section>
 
             <section>
