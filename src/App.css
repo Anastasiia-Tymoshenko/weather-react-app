@@ -12,24 +12,6 @@
   padding: 10px;
 }
 
-.App ul {
-  list-style: none;
-  font-size: 22px;
-  padding: 0;
-}
-
-.App h1 {
-  font-weight: 200;
-  font-size: 22px;
-  line-height: 1.5;
-  text-align: center;
-}
-
-.App form {
-  margin: 5px auto;
-  text-align: right;
-}
-
 .App h3 {
   text-align: center;
   margin: 30px auto;

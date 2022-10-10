@@ -21,13 +21,44 @@ export default function Weather(props) {
   if (weatherData.loaded) {
     return (
       <div className="Weather">
+        <div className="row">
+          <div className="col">
+            <ul className="date">
+              <li>Tuesday</li>
+              <li>September 13 2022</li>
+              <li>07:14 PM</li>
+            </ul>
+          </div>
+
+          <div className="col">
+            <form>
+              <label for="search-line" className="form-lable">
+                Change location
+              </label>
+              <input
+                type="search"
+                className="form-control form-control-sm"
+                placeholder="Start typing..."
+                autoComplete="off"
+              />
+              <input
+                type="submit"
+                className="btn btn-info btn-sm"
+                value="Search"
+              />
+              <button type="button" className="btn btn-warning btn-sm">
+                Current
+              </button>
+            </form>
+          </div>
+        </div>
+
         <section>
           <div className="row">
             <div className="col">
-              <ul>
-                <li>
-                  <h1>{weatherData.location}</h1>
-                </li>
+              <ul className="current-weather">
+                <h1>{weatherData.location}</h1>
+
                 <li className="text-capitalize">{weatherData.condition}</li>
                 <li>Humidity: {weatherData.humidity} %</li>
                 <li>Wind speed: {Math.round(weatherData.wind)} km/h</li>

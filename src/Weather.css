@@ -1,12 +1,4 @@
-.Weather ul {
-  list-style: none;
-  font-size: 22px;
-  font-weight: 200;
-  padding: 0;
-  margin-left: 30px;
-}
-
-.Weather li h1 {
+.Weather h1 {
   font-size: 56px;
   font-weight: 600;
   line-height: 1.5;
@@ -30,4 +22,24 @@
   width: 200px;
   display: block;
   margin: 0 auto;
+}
+
+.Weather form {
+  margin: 5px auto;
+  text-align: right;
+}
+
+.Weather .date {
+  list-style: none;
+  font-size: 22px;
+  font-weight: 300;
+  padding: 0;
+}
+
+.Weather .current-weather {
+  list-style: none;
+  font-size: 22px;
+  font-weight: 200;
+  padding: 0;
+  margin-left: 30px;
 }
