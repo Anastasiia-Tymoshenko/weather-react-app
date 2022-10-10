@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import FormatDate from './FormatDate';
 import './Weather.css';
 
 export default function Weather(props) {
@@ -9,7 +10,7 @@ export default function Weather(props) {
     setWeatherData({
       loaded: true,
       condition: response.data.weather[0].description,
-      //date: date,
+      date: new Date(response.data.dt * 1000),
       humidity: response.data.main.humidity,
       iconUrl: 'http://openweathermap.org/img/wn/10d@2x.png',
       location: response.data.name,
@@ -23,16 +24,12 @@ export default function Weather(props) {
       <div className="Weather">
         <div className="row">
           <div className="col">
-            <ul className="date">
-              <li>Tuesday</li>
-              <li>September 13 2022</li>
-              <li>07:14 PM</li>
-            </ul>
+            <FormatDate date={weatherData.date} />
           </div>
 
           <div className="col">
             <form>
-              <label for="search-line" className="form-lable">
+              <label for="search-line" className="form-label">
                 Change location
               </label>
               <input
