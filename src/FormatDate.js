@@ -32,15 +32,10 @@ export default function FormatDate(props) {
   let day = props.date.getDate();
   let year = props.date.getFullYear();
 
-  let hours = props.date.getHours();
-  if (hours < 10) {
-    hours = `0${hours}`;
-  }
-
-  let minutes = props.date.getMinutes();
-  if (minutes < 10) {
-    minutes = `0${hours}`;
-  }
+  let time = props.date.toLocaleTimeString([], {
+    hour: '2-digit',
+    minute: '2-digit',
+  });
 
   return (
     <ul className="date">
@@ -48,9 +43,7 @@ export default function FormatDate(props) {
       <li>
         {month} {day} {year}
       </li>
-      <li>
-        {hours}:{minutes}
-      </li>
+      <li>{time}</li>
     </ul>
   );
 }

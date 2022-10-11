@@ -13,12 +13,13 @@ export default function Weather(props) {
       condition: response.data.weather[0].description,
       date: new Date(response.data.dt * 1000),
       humidity: response.data.main.humidity,
-      iconUrl: 'http://openweathermap.org/img/wn/10d@2x.png',
+      iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       location: response.data.name,
       temperature: response.data.main.temp,
       wind: response.data.wind.speed,
     });
   }
+
   function search() {
     const apiKey = 'bbaf82554bcf373d103d5f004dcf90e3';
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}&units=metric`;
@@ -59,9 +60,6 @@ export default function Weather(props) {
                 className="btn btn-info btn-sm"
                 value="Search"
               />
-              <button type="button" className="btn btn-warning btn-sm">
-                Current
-              </button>
             </form>
           </div>
         </div>
