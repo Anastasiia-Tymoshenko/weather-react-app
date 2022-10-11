@@ -9,7 +9,6 @@ export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ loaded: false });
   const [location, setLocation] = useState(props.defaultLocation);
   function handleResponse(response) {
-    console.log(response.data);
     setWeatherData({
       loaded: true,
       condition: response.data.weather[0].description,

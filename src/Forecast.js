@@ -5,6 +5,7 @@ import './Forecast.css';
 export default function Forecast() {
   return (
     <div className="Forecast">
+      <h3>5-day forecast</h3>
       <div className="row">
         <div className="col">
           <h4>Wed 14/09</h4>

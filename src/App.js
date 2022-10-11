@@ -1,6 +1,5 @@
 import React from 'react';
 import Weather from './Weather';
-import Forecast from './Forecast';
 
 import './App.css';
 
@@ -10,11 +9,6 @@ export default function App() {
       <div className="container">
         <div className="wrapper">
           <Weather defaultLocation="Kyiv" />
-
-          <section>
-            <h3>5-day forecast</h3>
-            <Forecast />
-          </section>
 
           <p>
             <a
