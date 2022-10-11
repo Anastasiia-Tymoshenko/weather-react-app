@@ -1,0 +1,12 @@
+.WeatherTemperature h2 {
+  display: inline;
+  font-size: 120px;
+  font-weight: 600;
+  padding-left: 30px;
+}
+
+.WeatherTemperature span {
+  font-size: 40px;
+  font-weight: 500;
+  color: rgb(3, 35, 110);
+}

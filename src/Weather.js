@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import FormatDate from './FormatDate';
+import WeatherTemperature from './WeatherTemperature';
 import './Weather.css';
 
 export default function Weather(props) {
@@ -69,7 +70,6 @@ export default function Weather(props) {
             <div className="col">
               <ul className="current-weather">
                 <h1>{weatherData.location}</h1>
-
                 <li className="text-capitalize">{weatherData.condition}</li>
                 <li>Humidity: {weatherData.humidity} %</li>
                 <li>Wind speed: {Math.round(weatherData.wind)} km/h</li>
@@ -79,8 +79,7 @@ export default function Weather(props) {
               <img src={weatherData.iconUrl} alt={weatherData.condition} />
             </div>
             <div className="col">
-              <h2>{Math.round(weatherData.temperature)}</h2>
-              <span> °C</span>
+              <WeatherTemperature celsius={props.data.temperature} />
             </div>
           </div>
         </section>
