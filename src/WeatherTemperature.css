@@ -1,12 +1,20 @@
+.WeatherTemperature {
+  position: relative;
+  top: 25px;
+}
+
 .WeatherTemperature h2 {
   display: inline;
   font-size: 120px;
   font-weight: 600;
-  padding-left: 30px;
 }
 
-.WeatherTemperature span {
-  font-size: 40px;
+.WeatherTemperature .unit {
+  font-size: 30px;
   font-weight: 500;
   color: rgb(3, 35, 110);
+}
+
+.WeatherTemperature a:hover {
+  color: #0dcaf0;
 }

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import FormatDate from './FormatDate';
 import WeatherTemperature from './WeatherTemperature';
+
 import './Weather.css';
 
 export default function Weather(props) {
@@ -79,7 +80,7 @@ export default function Weather(props) {
               <img src={weatherData.iconUrl} alt={weatherData.condition} />
             </div>
             <div className="col">
-              <WeatherTemperature celsius={props.data.temperature} />
+              <WeatherTemperature celsius={weatherData.temperature} />
             </div>
           </div>
         </section>
