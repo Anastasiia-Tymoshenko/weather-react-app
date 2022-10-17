@@ -1,6 +1,7 @@
 .WeatherTemperature {
   position: relative;
   top: 25px;
+  margin-left: 30px;
 }
 
 .WeatherTemperature h2 {
@@ -13,8 +14,4 @@
   font-size: 30px;
   font-weight: 500;
   color: rgb(3, 35, 110);
-}
-
-.WeatherTemperature a:hover {
-  color: #0dcaf0;
 }
