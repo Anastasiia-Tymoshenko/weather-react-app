@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import FormatDate from './FormatDate';
 import WeatherTemperature from './WeatherTemperature';
-
+import Forecast from './Forecast';
 import './Weather.css';
 
 export default function Weather(props) {
@@ -11,6 +11,7 @@ export default function Weather(props) {
   function handleResponse(response) {
     setWeatherData({
       loaded: true,
+      coord: response.data.coord,
       condition: response.data.weather[0].description,
       date: new Date(response.data.dt * 1000),
       humidity: response.data.main.humidity,
@@ -76,13 +77,18 @@ export default function Weather(props) {
               </ul>
             </div>
             <div className="col">
-              <img src={weatherData.iconUrl} alt={weatherData.condition} />
+              <img
+                className="weather-icon"
+                src={weatherData.iconUrl}
+                alt={weatherData.condition}
+              />
             </div>
             <div className="col">
               <WeatherTemperature celsius={weatherData.temperature} />
             </div>
           </div>
         </section>
+        <Forecast coordinates={weatherData.coord} />
       </div>
     );
   } else {

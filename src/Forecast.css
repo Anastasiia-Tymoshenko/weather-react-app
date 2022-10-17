@@ -1,6 +1,5 @@
-.Forecast h3 {
-  text-align: center;
-  margin: 30px auto;
+.Forecast {
+  margin-bottom: 0;
 }
 
 .Forecast h4,
@@ -8,12 +7,13 @@
   font-size: 18px;
   font-weight: 300;
   line-height: 0.6;
-  opacity: 0.8;
+  opacity: 0.6;
   text-align: center;
+  margin: 0;
 }
 
-.Forecast img {
-  width: 40px;
+.Forecast .forecast-icon {
+  width: 80px;
   display: block;
   margin: 0 auto;
 }

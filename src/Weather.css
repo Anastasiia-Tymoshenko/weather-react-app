@@ -4,7 +4,7 @@
   line-height: 1.5;
 }
 
-.Weather img {
+.Weather .weather-icon {
   width: 200px;
   display: block;
   margin: 0 auto;
@@ -21,4 +21,7 @@
   font-weight: 200;
   padding: 0;
   margin-left: 30px;
+}
+.Weather section {
+  margin-bottom: 30px;
 }
